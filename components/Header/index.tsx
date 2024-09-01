@@ -46,16 +46,16 @@ const Header: React.FC = () => {
               <input
                 type="text"
                 placeholder="What are you looking for?"
-                className="bg-transparent outline-none text-gray-600 flex-grow"
+                className="bg-transparent outline-none text-gray-400 flex-grow"
               />
-              <Image src={icon1} alt="icon" width={20} height={20} />
+              <Image src={icon1} alt="search" width={20} height={20} />
             </div>
             <a href="#" className="text-gray-600 hover:text-black">
-              <Image src={icon2} alt="icon" width={20} height={20} />
+              <Image src={icon2} alt="desire" width={20} height={20} />
             </a>
 
             <a href="#" className="text-gray-600 hover:text-black">
-              <Image src={icon3} alt="icon" width={20} height={20} />
+              <Image src={icon3} alt="basket" width={20} height={20} />
             </a>
           </div>
         </div>
