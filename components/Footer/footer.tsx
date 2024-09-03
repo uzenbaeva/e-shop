@@ -1,11 +1,7 @@
 import React from 'react';
-import GR from '@/public/assets/Primer-QR-koda-kotoryj-vedet-na-sajt-1.png';
-import google from '@/public/assets/png-clipart-goggle-playstore-icon-google-play-computer-icons-android-play-button-angle-rectangle.png';
-import apple from '@/public/assets/apple-logo.png';
-import facebook from '@/public/assets/facebooke-icon.png';
-import twitter from '@/public/assets/png-transparent-logo-media-social-twitter-round-social-media-icons-icon.png';
-import instagram from '@/public/assets/insta-icon.png';
-import In from '@/public/assets/in-icon.png';
+import icon1 from '@/public/assets/Primer-QR-koda-kotoryj-vedet-na-sajt-1.png';
+import icon2 from '@/public/assets/pngwing.com (5).png';
+import icon3 from '@/public/assets/klipartz.com (1).png';
 
 const Footer = () => {
   return (
@@ -92,10 +88,8 @@ const Footer = () => {
           <h5 className="font-bold mb-4">Download App</h5>
           <p>Save $3 With App New User Only</p>
           <div className="container mx-auto flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
-            {/* QR Code */}
             <div className="flex justify-center"></div>
 
-            {/* Download Buttons */}
             <div className="flex flex-col space-y-4">
               <a href="#" className="block"></a>
               <a href="#" className="block"></a>
@@ -103,7 +97,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-8 border-t border-gray-800 pt-4">
-          <p>© Copyright Rimel 2022. All rights reserved</p>
+          <p>© Copyright Rimel 2024. All rights reserved</p>
           <div className="flex justify-center space-x-8 mt-8">
             <a href="#" className="text-white hover:text-gray-400">
               <i className="fab fa-facebook-f"></i>
