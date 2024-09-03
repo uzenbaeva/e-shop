@@ -4,6 +4,8 @@ import icon2 from '@/public/assets/pngwing.com (5).png';
 import icon3 from '@/public/assets/klipartz.com (1).png';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-black text-white py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
@@ -97,7 +99,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-8 border-t border-gray-800 pt-4">
-          <p>© Copyright Rimel 2024. All rights reserved</p>
+          <p>© Copyright Rimel {currentYear}. All rights reserved</p>
           <div className="flex justify-center space-x-8 mt-8">
             <a href="#" className="text-white hover:text-gray-400">
               <i className="fab fa-facebook-f"></i>
