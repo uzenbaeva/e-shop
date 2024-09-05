@@ -158,9 +158,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className=" flex bg-black text-white text-center py-4 border-t border-purple-500 w-11/12 ">
-          <p className="text-sm ">
-            © Copyright Rimel {currentYear}. All rights reserved
+        <div className="border-t border-gray-700 mt-8 pt-4 text-center w-96">
+          <p className="text-gray-400 text-sm">
+            © Copyright Rimel {currentYear}. All rights reserved.
           </p>
         </div>
       </div>
