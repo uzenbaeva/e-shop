@@ -1,7 +1,12 @@
 import React from 'react';
-import icon1 from '@/public/assets/Primer-QR-koda-kotoryj-vedet-na-sajt-1.png';
-import icon2 from '@/public/assets/pngwing.com (5).png';
-import icon3 from '@/public/assets/klipartz.com (1).png';
+import Image from 'next/image';
+import grcode from '@/public/assets/Qrcode 1.png';
+import google from '@/public/assets/google-play.png';
+import apple from '@/public/assets/appstore.png';
+import facebook from '@/public/assets/Icon-Facebook.png';
+import group from '@/public/assets/Group.png';
+import insta from '@/public/assets/insta.png';
+import vectorIn from '@/public/assets/VectorIn.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -88,32 +93,75 @@ const Footer = () => {
 
         <div>
           <h5 className="font-bold mb-4">Download App</h5>
-          <p>Save $3 With App New User Only</p>
-          <div className="container mx-auto flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
-            <div className="flex justify-center"></div>
+          <p className="mt-3 text-sm">Save $3 with App New User Only</p>
 
-            <div className="flex flex-col space-y-4">
-              <a href="#" className="block"></a>
-              <a href="#" className="block"></a>
+          <div className="flex flex-col md:flex-row items-center justify-start mt-2 space-y-4 md:space-y-0 md:space-x-8">
+            <div>
+              <Image src={grcode} alt="GrCode" width={70} height={70} />
+            </div>
+
+            <div>
+              <a
+                href="https://play.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={google} alt="Google App" width={90} height={90} />
+              </a>
+              <a
+                className="mt-2"
+                href="https://www.apple.com/app-store/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={apple} alt="Apple Store" width={90} height={90} />
+              </a>
             </div>
           </div>
-        </div>
-        <div className="text-center mt-8 border-t border-gray-800 pt-4">
-          <p>© Copyright Rimel {currentYear}. All rights reserved</p>
-          <div className="flex justify-center space-x-8 mt-8">
-            <a href="#" className="text-white hover:text-gray-400">
-              <i className="fab fa-facebook-f"></i>
+
+          <div className="flex justify-between space-x-9 mt-3">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook-f text-white text-2xl">
+                <Image src={facebook} alt="Facebook" width={20} height={20} />
+              </i>
             </a>
-            <a href="#" className="text-white hover:text-gray-400">
-              <i className="fab fa-twitter"></i>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-twitter text-white text-2xl">
+                <Image src={group} alt="Twitter" width={20} height={20} />
+              </i>
             </a>
-            <a href="#" className="text-white hover:text-gray-400">
-              <i className="fab fa-instagram"></i>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram text-white text-2xl">
+                <Image src={insta} alt="Instagram" width={20} height={20} />
+              </i>
             </a>
-            <a href="#" className="text-white hover:text-gray-400">
-              <i className="fab fa-linkedin-in"></i>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin-in text-white text-2xl">
+                <Image src={vectorIn} alt="IN" width={20} height={20} />
+              </i>
             </a>
           </div>
+        </div>
+        <div className=" flex bg-black text-white text-center py-4 border-t border-purple-500 w-11/12 ">
+          <p className="text-sm ">
+            © Copyright Rimel {currentYear}. All rights reserved
+          </p>
         </div>
       </div>
     </footer>
