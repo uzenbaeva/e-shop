@@ -1,10 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '@/public/assets/logo.png';
-import icon1 from '@/public/assets/pngwing.com (1).png';
-import icon2 from '@/public/assets/pngwing.com 2.png';
-import icon3 from '@/public/assets/pngwing.com3.png';
+import icon1 from '@/public/assets/search.png';
+import icon2 from '@/public/assets/Vector.png';
+import icon3 from '@/public/assets/Cart1.png';
 
 const Header: React.FC = () => {
   return (
@@ -13,7 +12,7 @@ const Header: React.FC = () => {
         <div className="flex items-center cursor-pointer">
           <Link href="/" legacyBehavior>
             <a>
-              <Image src={logo} alt="Logo" width={50} height={50} />
+              {/* <Image src={logo} alt="Logo" width={50} height={50} /> */}
             </a>
           </Link>
           <span className="ml-2 text-xl font-bold">My Shop</span>
@@ -48,14 +47,14 @@ const Header: React.FC = () => {
                 placeholder="What are you looking for?"
                 className="bg-transparent outline-none text-gray-400 flex-grow"
               />
-              <Image src={icon1} alt="search" width={20} height={20} />
+              <Image src={icon1} alt="search" width={25} height={25} />
             </div>
             <a href="#" className="text-gray-600 hover:text-black">
               <Image src={icon2} alt="desire" width={20} height={20} />
             </a>
 
             <a href="#" className="text-gray-600 hover:text-black">
-              <Image src={icon3} alt="basket" width={20} height={20} />
+              <Image src={icon3} alt="basket" width={25} height={25} />
             </a>
           </div>
         </div>
