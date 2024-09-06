@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react';
 import { productsAPI } from '@/lib/product';
 import { formatCurrency } from '@/utils/formatCurrency';
 import Footer from '@/components/Footer/footer';
+import DropdownMenu from '@/components/DropdownMenu/dropdown';
+import CategoryMenu from '@/components/DropdownMenu/CategoryMenu';
 
 const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -21,6 +23,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Header />
+      <DropdownMenu />
+      <CategoryMenu />
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
           <h2 className="text-3xl font-bold">Products</h2>
