@@ -2,88 +2,86 @@ import { useState } from 'react';
 
 const CategoryMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const categories = [
+    {
+      women: 'Womens Fashion',
+      mens: 'Mens Fashion',
+      home: 'Home & Lifestyle',
+      medicine: 'Medicine',
+      sports: 'Sports & Outdoor',
+      babys: 'Babys & Toys',
+      groceries: 'Groceries & Pets',
+      health: 'Health & Beauty',
+    },
+  ];
 
   return (
     <div className="relative inline-block text-left">
-      {/* Button to toggle dropdown */}
       <button
         onClick={toggleMenu}
         className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
       >
-        Categories
-        <svg
-          className="-mr-1 ml-2 h-5 w-5"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.23 7.21a.75.75 0 011.06.02L10 10.89l3.71-3.66a.75.75 0 111.06 1.06l-4.24 4.18a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 01.02-1.06z"
-            clipRule="evenodd"
-          />
-        </svg>
+        Categories ▼
       </button>
-      {/* Dropdown panel */}
-      {isOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
-          <div className="py-1">
+      {!isOpen &&
+        categories.map((item, index) => (
+          <div
+            key={index}
+            className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded z-50"
+          >
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Women's Fashion
+              <p>{item.women}</p>
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Men's Fashion
+              <p>{item.mens}</p>
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Home & Lifestyle
+              <p>{item.home}</p>
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Medicine
+              <p>{item.medicine}</p>
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Sports & Outdoor
+              <p>{item.sports}</p>
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Baby's & Toys
+              <p>{item.babys}</p>
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Groceries & Pets
+              <p>{item.groceries}</p>
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Health & Beauty
+              <p>{item.health}</p>
             </a>
           </div>
-        </div>
-      )}
+        ))}
     </div>
   );
 };

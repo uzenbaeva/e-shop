@@ -9,7 +9,7 @@ const DropdownMenu: React.FC = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="px-4 py-2 bg-gray-800 text-white font-semibold rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50"
       >
-        Women's Fashion ▼
+        Womens Fashion ▼
       </button>
       {isOpen && (
         <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded z-50">
@@ -35,7 +35,7 @@ const DropdownMenu: React.FC = () => {
             href="#"
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
           >
-            Baby's & Toys
+            Babys & Toys
           </a>
           <a
             href="#"
