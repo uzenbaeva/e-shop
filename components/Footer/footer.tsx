@@ -12,7 +12,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-black text-white py-8 container mx-auto">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         <div>
           <h5 className="font-bold mb-4">Exclusive</h5>
@@ -139,7 +139,7 @@ const Footer = () => {
               </i>
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/uzenbaeva.1/"
               target="_blank"
               rel="noopener noreferrer"
             >
