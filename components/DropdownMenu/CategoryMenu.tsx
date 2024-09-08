@@ -19,10 +19,10 @@ const CategoryMenu: React.FC = () => {
   ];
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative  container mx-auto">
       <button
         onClick={toggleMenu}
-        className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        className="px-4 py-2 bg-gray-800 text-white font-semibold rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50"
       >
         Categories ▼
       </button>

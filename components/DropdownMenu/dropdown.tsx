@@ -4,7 +4,7 @@ const DropdownMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative container mx-auto">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="px-4 py-2 bg-gray-800 text-white font-semibold rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50"
