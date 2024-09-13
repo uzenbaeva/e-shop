@@ -2,9 +2,6 @@ import { useState } from 'react';
 
 const CategoryMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
   const categories = [
     {
       women: 'Womens Fashion',
@@ -21,8 +18,8 @@ const CategoryMenu: React.FC = () => {
   return (
     <div className="relative  container mx-auto">
       <button
-        onClick={toggleMenu}
-        className="px-4 py-2 bg-gray-800 text-white font-semibold rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50"
+        onClick={() => setIsOpen(!isOpen)}
+        className="px-4 py-2 bg-white text-black font-semibold rounded focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50"
       >
         Categories ▼
       </button>

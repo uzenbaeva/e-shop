@@ -1,0 +1,83 @@
+.section-carousel{
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-between;
+  margin: 10px;
+}
+.contauner {
+  max-width: auto;
+  display: flex;
+}
+
+.carousel-block{
+  display: flex;
+  justify-content: space-between
+  ;
+}
+.drops
+{
+  padding: 0 20px 0 0;
+}
+.carousel {
+  position: relative;
+  display: flex;
+  margin: 0;
+  justify-content: end;
+  align-items: center;
+}
+
+.slide {
+  display: flex;
+  background: black;
+}
+
+.slide-logo{
+  width: 10pc;
+  margin: 20px 0 0 0 ;
+}
+
+.slide-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.slide-text {
+  padding: 20px 120px 20px 60px;
+}
+
+.slide-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slide-text p {
+  font-size: 40px;
+  font-weight:700 ;
+}
+
+.shop-button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: rgb(197, 87, 87);
+  border: solid 1px #fff;
+}
