@@ -1,4 +1,4 @@
-.section-carousel{
+.section-carousel {
   display: flex;
   padding: 0 50px;
   justify-content: space-between;
@@ -9,13 +9,11 @@
   display: flex;
 }
 
-.carousel-block{
+.carousel-block {
   display: flex;
-  justify-content: space-between
-  ;
+  justify-content: space-between;
 }
-.drops
-{
+.drops {
   padding: 0 20px 0 0;
 }
 .carousel {
@@ -31,9 +29,9 @@
   background: black;
 }
 
-.slide-logo{
+.slide-logo {
   width: 10pc;
-  margin: 20px 0 0 0 ;
+  margin: 20px 0 0 0;
 }
 
 .slide-image {
@@ -52,7 +50,7 @@
 
 .slide-text p {
   font-size: 40px;
-  font-weight:700 ;
+  font-weight: 700;
 }
 
 .shop-button {

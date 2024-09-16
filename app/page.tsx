@@ -7,6 +7,7 @@ import { productsAPI } from '@/lib/product';
 import { formatCurrency } from '@/utils/formatCurrency';
 import Footer from '@/components/Footer/footer';
 import Discounts from '@/components/Discounts/discounts';
+import Countdown from '@/components/FlashSales/index';
 const Home: React.FC = () => {
   // const [products, setProducts] = useState<Product[]>([]);
   // const [loading, setLoading] = useState<boolean>(true);
@@ -22,7 +23,8 @@ const Home: React.FC = () => {
     <>
       <Header />
       <Discounts />
-      <Footer />
+      <Countdown />
+      {/* <Footer /> */}
     </>
   );
 };
