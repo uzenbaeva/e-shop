@@ -9,7 +9,7 @@ const Carousel = () => {
   return (
     <>
       <section className="section-carousel">
-        <div className="container">
+        <div className="text-white py-8 container mx-auto">
           <div className="carousel-block">
           <div className="drops">
           <DropdownMenu />

@@ -16,7 +16,7 @@ const CategoryMenu: React.FC = () => {
   ];
 
   return (
-    <div className="relative  container mx-auto">
+    <div className="relative  container mx-auto ">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="px-4 py-2 bg-white text-black font-semibold rounded focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50"
